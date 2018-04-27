@@ -38,6 +38,8 @@ public class GT4500 implements SpaceShip {
   public boolean fireTorpedo(FiringMode firingMode) {
 
     boolean firingSuccess = false;
+    if (firingMode == null)
+	return false;
 
       if (firingMode == FiringMode.SINGLE){
         if (wasPrimaryFiredLast) {
